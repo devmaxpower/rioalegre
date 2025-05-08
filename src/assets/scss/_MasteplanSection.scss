@@ -1,0 +1,24 @@
+@use 'variables';
+#masterplan{
+    h2{
+        font-size: 1.8vw;
+        color: variables.$verde-oscuro;
+    }
+    .loteo{
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        margin-top: 60px;
+    }
+    
+}
+@media screen and (max-width: 991px) {
+    #masterplan{
+        h2{
+            font-size: 22px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}

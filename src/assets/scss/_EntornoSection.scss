@@ -1,0 +1,74 @@
+@use 'variables';
+#entorno{
+    h2{
+        color: variables.$verde-oscuro;
+        font-size: 1.8vw;
+    }
+    #tabs{
+        .tab {
+            display: none;
+            &.tab-activo {
+                display: block;
+            }
+        }
+        .botonera {
+            border-collapse: collapse;
+            padding: 0;
+            margin: 30px auto;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            justify-content: center;
+            li{
+                padding: 0;
+                a{
+                    padding: 10px 20px;
+                    background-color: variables.$blanco;
+                    border: 1px solid variables.$verde-oscuro;
+                    color: variables.$verde-oscuro;
+                    text-decoration: none;
+                    margin-left: -1px;
+                    margin-right: -1px;
+                    font-weight: variables.$fw_bold;
+                    &.btn-activo {
+                        font-weight: bold;
+                        text-decoration: none;
+                        background-color: variables.$verde-oscuro;
+                        border: 1px solid variables.$verde-chillon;
+                        color: variables.$blanco;
+                    }
+                }
+            }
+        }
+        .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+            position: static;
+            margin-top: 20px;
+            .swiper-pagination-bullet{
+                background-color: variables.$blanco;
+                border: 2px solid variables.$verde-oscuro;
+                height: 12px;
+                width: 12px;
+                &.swiper-pagination-bullet-active{
+                    background-color: variables.$verde-oscuro;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    #entorno{
+        h2{
+            font-size: 22px;
+        }
+        p{
+            font-size: 14px;
+        }
+        img{
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+  

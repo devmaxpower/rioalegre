@@ -1,0 +1,38 @@
+@use 'variables';
+footer{
+    padding: 50px 0;
+    .contenedor{
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            img{
+                width: 30px;
+                display: block;
+                margin-right: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: variables.$parrafos;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    footer{
+        .contenedor{
+            p{
+                font-size: 14px;
+                flex-direction: column;
+                a{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

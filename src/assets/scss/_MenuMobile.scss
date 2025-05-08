@@ -1,0 +1,58 @@
+@use 'variables';
+.menu-mobile{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1000;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: variables.$blanco;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s ease-in-out all;
+    .ul-mobile{
+        list-style-type: none;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        li{
+            height: 70px;
+            a{
+                text-decoration: none;
+                color: variables.$verde-oscuro;
+                text-align: center;
+                display: block;
+                font-weight: variables.$fw_bold;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .closeMenu{
+        img{
+            height: 30px;
+            display: block;
+            position: absolute;
+            top: 30px;
+            right: 40px;
+        }
+    }
+    .redes{
+        opacity: 1;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        li{
+            img{
+                height: 30px;
+            }
+        }
+    }
+    &.activo{
+        left: 0;
+    }
+}

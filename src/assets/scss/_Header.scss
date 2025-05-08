@@ -1,0 +1,103 @@
+@use 'variables';
+header{
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    border-bottom: 5px solid variables.$verde-oscuro;
+    background-color: variables.$blanco;
+    z-index: 999;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            &.logo-header{
+                opacity: 0;
+                transition: 0.3s ease-in-out all;
+                img{
+                    display: block;
+                    height: 40px;
+                    width: auto;
+                }
+            }
+        }
+        ul
+        {
+            display: flex;
+            list-style-type: none;
+            width: 90%;
+            justify-content: space-around;
+            li{
+                a{
+                    text-decoration: none;
+                    color: variables.$verde-oscuro;
+                    display: block;
+                    text-transform: uppercase;
+                    font-weight: variables.$fw_600;
+                }
+            }
+            &.redes{
+                width: auto;
+                opacity: 0;
+                transition: 0.3s ease-in-out all;
+                li{
+                    padding: 0 10px;
+                    a{
+                        img{
+                            height: 20px;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.sticky{
+        nav{
+            a{
+                &.logo-header{
+                    opacity: 1;
+                }
+            }
+        }
+        ul{
+            &.redes{
+                opacity: 1;
+            }
+        }
+    }
+    .menuMobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 991px){
+    header {
+        height: 0;
+        overflow: hidden;
+        border-color: transparent;
+        transition: 0.2s ease-in-out all;
+        nav {
+            ul{
+                display: none;
+                .redes{
+                    display: none;
+                }
+            }
+            .menuMobile{
+                display: block;
+                opacity: 0;
+                img{
+                    height: 30px;
+                }
+            }
+        }
+        &.sticky{
+            display: block;
+            height: 85px;
+            border-color: variables.$verde-oscuro;
+            .menuMobile{
+                opacity: 1;
+            }
+        }
+    }
+}
