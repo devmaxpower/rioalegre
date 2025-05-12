@@ -111,9 +111,10 @@ header{
             }
         }
         &.sticky{
-            display: block;
+            display: flex;
             height: 85px;
             border-color: variables.$verde-oscuro;
+            align-items: center;
             .menuMobile{
                 opacity: 1;
             }
