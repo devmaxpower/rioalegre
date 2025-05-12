@@ -56,12 +56,12 @@ const EntornoSection = () => {
         <p>Cercano a ríos y lagos de la zona.</p>
       </article>
       <article id="tabs" className='contenedor'>
-        <ul className="botonera">
+        {/* <ul className="botonera">
           <li><a href="#terreno">Terreno</a></li>
           <li><a href="#entorno-tab">Entorno</a></li>
-        </ul>
+        </ul> */}
 
-        <div id="terreno" className="tab">
+        <div id="terreno" className="tab tab-activo">
           
           <Swiper
             modules={[Pagination]}
@@ -80,7 +80,7 @@ const EntornoSection = () => {
           </Swiper>
         </div>
 
-        <div id="entorno-tab" className="tab">
+        {/* <div id="entorno-tab" className="tab">
           <Swiper
             modules={[Pagination]}
             pagination={{ clickable: true }}
@@ -95,7 +95,7 @@ const EntornoSection = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </div> */}
       </article>
     </section>
   );

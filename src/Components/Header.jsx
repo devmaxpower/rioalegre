@@ -13,12 +13,15 @@ const Header = ({ className, onMenuClick }) => {
           <li>
             <a href="#proyecto">Proyecto</a>
           </li>
+          <li className="line"></li>
           <li>
             <a href="#masterplan">Masterplan</a>
           </li>
+          <li className="line"></li>
           <li>
             <a href="#entorno">Galería</a>
           </li>
+          <li className="line"></li>
           <li>
             <a href="#contacto">Contacto</a>
           </li>

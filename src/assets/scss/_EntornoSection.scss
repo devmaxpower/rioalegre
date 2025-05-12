@@ -1,5 +1,6 @@
 @use 'variables';
 #entorno{
+    padding-top: 0;
     h2{
         color: variables.$verde-oscuro;
         font-size: 1.8vw;
@@ -7,9 +8,17 @@
     #tabs{
         .tab {
             display: none;
+            width: 90%;
+            margin: 0 auto;
             &.tab-activo {
                 display: block;
+                padding-top: 40px;
             }
+        }
+        img{
+            height: 600px;
+            width: 100%;
+            object-fit: cover;
         }
         .botonera {
             border-collapse: collapse;

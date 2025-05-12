@@ -2,8 +2,7 @@
 header{
     position: sticky;
     top: 0;
-    padding: 20px 0;
-    border-bottom: 5px solid variables.$verde-oscuro;
+    padding: 0;
     background-color: variables.$blanco;
     z-index: 999;
     nav{
@@ -11,12 +10,13 @@ header{
         justify-content: space-between;
         align-items: center;
         a{
+            
             &.logo-header{
                 opacity: 0;
                 transition: 0.3s ease-in-out all;
                 img{
                     display: block;
-                    height: 40px;
+                    height: 25px;
                     width: auto;
                 }
             }
@@ -27,13 +27,24 @@ header{
             list-style-type: none;
             width: 90%;
             justify-content: space-around;
+            max-width: 800px;
+
+            border-bottom: 2px solid variables.$verde-oscuro;
             li{
                 a{
                     text-decoration: none;
                     color: variables.$verde-oscuro;
-                    display: block;
                     text-transform: uppercase;
                     font-weight: variables.$fw_600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                }
+                &.line{
+                    width: 2px;
+                    background: variables.$verde-oscuro;
+                    height: 45px;
                 }
             }
             &.redes{
@@ -53,6 +64,8 @@ header{
         }
     }
     &.sticky{
+
+        border-bottom: 5px solid variables.$verde-oscuro;
         nav{
             a{
                 &.logo-header{
@@ -63,6 +76,12 @@ header{
         ul{
             &.redes{
                 opacity: 1;
+            }
+            border-bottom: 0px solid #000;
+            li{
+                a{
+                    font-weight: variables.$fw_bold;
+                }
             }
         }
     }
