@@ -10,7 +10,7 @@ const Ubicacion = () => {
             <p>Cercano a ríos y lagos de la zona.</p>
         </article>
         <article className='contenedor'>
-          <iframe src="https://www.lanube360.com/entre-rios/" frameborder="0"></iframe>
+          <img src={entornoImg} alt="" />
         </article>
         <article className="contenedor">
           <div className="grid-x3">

@@ -11,6 +11,13 @@
         display: block;
         margin-top: 60px;
     }
+
+    iframe{
+        margin-top: 40px;
+        width: 100%;
+        min-height: 600px;
+        height: 60vh;
+    }
     
 }
 @media screen and (max-width: 991px) {

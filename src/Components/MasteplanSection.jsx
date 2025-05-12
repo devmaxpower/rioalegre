@@ -15,7 +15,7 @@ const MasteplanSection = () => {
       <article className="contenedor">
         <h2>Masterplan</h2>
         <p>Sitios desde UF 1.000. Haz un recorrido en 360º y elige el tuyo.</p>
-        <div className="loteo">
+        {/* <div className="loteo">
             <a href={LoteoJPG} data-fancybox>
                 <img
                 src={LoteoSVG}
@@ -27,7 +27,10 @@ const MasteplanSection = () => {
                 }}
                 />
             </a>
-        </div>
+        </div> */}
+        <article className='contenedor'>
+          <iframe src="https://www.lanube360.com/entre-rios/" frameborder="0"></iframe>
+        </article>
       </article>
     </section>
   );
