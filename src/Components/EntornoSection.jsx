@@ -51,7 +51,7 @@ const EntornoSection = () => {
   return (
     <section id='entorno'>
       <article className='contenedor'>
-        <h2>Excelente ubicación con fácil acceso</h2>
+        <h2>Descubre el entorno de tu nuevo hogar</h2>
         <p>Hermoso entorno con abundante vegetación y acceso al Rio Pedregoso.</p>
         <p>Cercano a ríos y lagos de la zona.</p>
       </article>

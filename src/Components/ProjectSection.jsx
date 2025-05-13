@@ -8,7 +8,7 @@ const ProjectSection = () => {
     <section id='proyecto'>
         <article className='contenedor'>
             <h2>Tranquilidad y todas las comodidades que necesitas</h2>
-            <p>Loteo con caminos estabilizados, agua en cada parcela, energía eléctrica (debe pedirse empalme en Compañía General de Electricidad),portón eléctrico e internet. El loteo cuenta con 2 accesos, ambos con portón eléctrico que funcionan con control remoto y teléfono celular.</p>
+            <p>Loteo con caminos estabilizados, agua en cada parcela, energía eléctrica (debe pedirse empalme en Compañía General de Electricidad), portón eléctrico e internet. El loteo cuenta con 2 accesos, ambos con portón eléctrico que funcionan con control remoto y teléfono celular.</p>
             <ul className="caracteristicas">
                 <li>
                     <img src={Urbanizado} alt="" />
