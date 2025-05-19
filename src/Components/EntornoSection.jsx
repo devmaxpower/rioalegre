@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import ReactPlayer from 'react-player/vimeo';
+
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -56,10 +58,10 @@ const EntornoSection = () => {
         <p>Cercano a ríos y lagos de la zona.</p>
       </article>
       <article id="tabs" className='contenedor'>
-        {/* <ul className="botonera">
-          <li><a href="#terreno">Terreno</a></li>
-          <li><a href="#entorno-tab">Entorno</a></li>
-        </ul> */}
+        <ul className="botonera">
+          <li><a href="#terreno">Galería</a></li>
+          <li><a href="#entorno-tab">Video</a></li>
+        </ul>
 
         <div id="terreno" className="tab tab-activo">
           
@@ -80,8 +82,27 @@ const EntornoSection = () => {
           </Swiper>
         </div>
 
-        {/* <div id="entorno-tab" className="tab">
-          <Swiper
+        <div id="entorno-tab" className="tab">
+          <div className="video-wrapper" style={{ position: 'relative', paddingTop: '56.25%' }}>
+      <ReactPlayer
+        url="https://vimeo.com/1085062541/993f005cd0"
+        width="100%"
+        height="100%"
+        style={{ position: 'absolute', top: 0, left: 0 }}
+        controls={true}
+          config={{
+            vimeo: {
+              playerOptions: {
+                title: false,
+                byline: false,
+                portrait: false,
+                dnt: true, // "Do Not Track" para evitar seguimiento
+              }
+            }
+          }}
+      />
+    </div>
+          {/* <Swiper
             modules={[Pagination]}
             pagination={{ clickable: true }}
             observer={true}
@@ -94,8 +115,8 @@ const EntornoSection = () => {
                 <img src={imgSrc} alt={`Imagen entorno ${i + 1}`} className="slide-image" />
               </SwiperSlide>
             ))}
-          </Swiper>
-        </div> */}
+          </Swiper> */}
+        </div>
       </article>
     </section>
   );
