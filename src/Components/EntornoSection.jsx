@@ -67,7 +67,7 @@ const EntornoSection = () => {
           
           <Swiper
             modules={[Pagination]}
-            pagination={{ clickable: true }}
+            pagination={{ clickable: true, dynamicBullets: true, }}
             observer={true}
             observeParents={true}
             spaceBetween={20}

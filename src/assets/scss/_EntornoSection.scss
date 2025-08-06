@@ -53,6 +53,7 @@
         .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
             position: static;
             margin-top: 20px;
+            margin: 0 auto;
             .swiper-pagination-bullet{
                 background-color: variables.$blanco;
                 border: 2px solid variables.$verde-oscuro;
